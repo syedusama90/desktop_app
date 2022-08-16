@@ -1,0 +1,24 @@
+<head>
+		<!-- Basic Page Info -->
+		<meta charset="utf-8" />
+        <title>DesktopApp</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+		<!-- Site favicon -->
+        
+        <%=favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png', sizes: "180x180"%>
+
+        <% %w(32 16).each do |s| %>
+            <%= favicon_link_tag "favicon-#{s}x#{s}.png", rel: 'icon', type: 'image/png', sizes: "#{s}x#{s}" %>
+        <% end %>
+		<!-- Mobile Specific Metas -->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<!-- CSS -->
+        <%= stylesheet_link_tag "application" %>
+        
+        <%= render 'header/script' %>
+</head>

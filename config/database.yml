@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: desktop_app_development
+  username: usama
+  password: 123
+  host: localhost
+  port: 5432
